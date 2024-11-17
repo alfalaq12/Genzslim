@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Siti</title>
+  <title>Genzslim</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -62,14 +62,15 @@
             <li><a href="#hero" class="active">Home<br></a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#departments">Artikel</a></li>
+            <li><a href="#kalkulator">kalkulator</a></li>
+            <li><a href="#doctors">News</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn d-none d-sm-block" href="#appointment">Kalkulator kesehatan</a>
+        <a class="cta-btn d-none d-sm-block" href="#kalkulator">Kalkulator</a>
 
       </div>
 
@@ -133,15 +134,15 @@
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
                     <i class="bi bi-heart"></i>
                     <h4>Hal apa saja yang harus dilakukan untuk </h4>
-                    <p>testing</p>
+                    <p></p>
                   </div>
                 </div><!-- End Icon Box -->
 
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
                     <i class="bi bi-inboxes"></i>
-                    <h4>testing</h4>
-                    <p>testing</p>
+                    <h4></h4>
+                    <p></p>
                   </div>
                 </div><!-- End Icon Box -->
 
@@ -177,22 +178,22 @@
               <li>
                 <i class="fa-solid fa-vial-circle-check"></i>
                 <div>
-                  <h5>testing</h5>
-                  <p>testing</p>
+                  <h5></h5>
+                  <p></p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-pump-medical"></i>
                 <div>
-                  <h5>testing</h5>
-                  <p>testing</p>
+                  <h5></h5>
+                  <p></p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-heart-circle-xmark"></i>
                 <div>
-                  <h5>testing</h5>
-                  <p>testing</p>
+                  <h5></h5>
+                  <p></p>
                 </div>
               </li>
             </ul>
@@ -255,7 +256,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>testing</p>
+        <p></p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -270,7 +271,7 @@
               <a href="#" class="stretched-link">
                 <h3>Nesciunt Mete</h3>
               </a>
-              <p>testing</p>
+              <p></p>
             </div>
           </div><!-- End Service Item -->
 
@@ -282,7 +283,7 @@
               <a href="#" class="stretched-link">
                 <h3>Eosle Commodi</h3>
               </a>
-              <p>testing</p>
+              <p></p>
             </div>
           </div><!-- End Service Item -->
 
@@ -294,7 +295,7 @@
               <a href="#" class="stretched-link">
                 <h3>Ledo Markt</h3>
               </a>
-              <p>testing</p>
+              <p></p>
             </div>
           </div><!-- End Service Item -->
 
@@ -306,7 +307,7 @@
               <a href="#" class="stretched-link">
                 <h3>Asperiores Commodit</h3>
               </a>
-              <p>testing</p>
+              <p></p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -319,7 +320,7 @@
               <a href="#" class="stretched-link">
                 <h3>Velit Doloremque</h3>
               </a>
-              <p>testing</p>
+              <p></p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -332,7 +333,7 @@
               <a href="#" class="stretched-link">
                 <h3>Dolori Architecto</h3>
               </a>
-              <p>testing</p>
+              <p></p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -343,63 +344,60 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Appointment Section -->
-    <section id="appointment" class="appointment section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Appointment</h2>
-        <p>testing</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+    <!-- Kalkulator Section -->
+    <section id="Kalkulator" class="Kalkulator section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Kalkulator BMI</h2>
+          <p>Hitung Indeks Massa Tubuh Anda</p>
+        </div>
+    
+        <form id="bmi-form" class="php-email-form" data-aos="fade-up" data-aos-delay="100" onsubmit="return calculateBMI(event)">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="number" name="weight" class="form-control" placeholder="Berat Badan (kg)" required>
             </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+            <div class="col-md-6">
+              <input type="number" name="height" class="form-control" placeholder="Tinggi Badan (cm)" required>
             </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+            <div class="col-md-12 text-center">
+              <button type="submit">Hitung BMI</button>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select" required="">
-                <option value="">Select Department</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select" required="">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-          </div>
-          <div class="mt-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-            <div class="text-center"><button type="submit">Make an Appointment</button></div>
           </div>
         </form>
-
+    
+        <div id="bmi-result" class="mt-3" style="display: none;">
+          <h4>Hasil BMI Anda: <span id="bmi-value"></span></h4>
+          <p id="bmi-category"></p>
+        </div>
       </div>
+    </section>
+    
+    <script>
+      function calculateBMI(event) {
+        event.preventDefault();
+        
+        const weight = parseFloat(event.target.weight.value);
+        const height = parseFloat(event.target.height.value) / 100; // convert cm to meters
+        const bmi = (weight / (height * height)).toFixed(2);
+    
+        document.getElementById('bmi-value').textContent = bmi;
+    
+        let category;
+        if (bmi < 18.5) {
+          category = "Kekurangan berat badan";
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+          category = "Normal";
+        } else if (bmi >= 25 && bmi < 29.9) {
+          category = "Kelebihan berat badan";
+        } else {
+          category = "Obesitas";
+        }
+    
+        document.getElementById('bmi-category').textContent = category;
+        document.getElementById('bmi-result').style.display = 'block';
+      }
+    </script>
 
     </section><!-- /Appointment Section -->
 
@@ -408,8 +406,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Departments</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Artikel</h2>
+        <p>Artikel tentang kesehatan tubuh</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -440,8 +438,19 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Cardiology</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    <p class="fst-italic">Kardiologi adalah cabang ilmu kedokteran yang berfokus pada diagnosis, pengobatan, dan pencegahan penyakit jantung dan pembuluh darah.
+                      Penyakit umum yang ditangani:
+                      
+                      Penyakit jantung koroner
+                      Gagal jantung
+                      Gangguan irama jantung (aritmia)
+                      Tekanan darah tinggi (hipertensi)
+                      Perawatan yang sering digunakan:</p>
+                    <p>Pemeriksaan EKG (Elektrokardiogram)
+                      Kateterisasi jantung
+                      Obat-obatan seperti beta-blockers dan statin
+                      Pentingnya Kardiologi:
+                      Meningkatnya gaya hidup tidak sehat seperti merokok, pola makan buruk, dan kurang olahraga telah membuat penyakit kardiovaskular menjadi salah satu penyebab utama kematian di dunia.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
@@ -451,9 +460,22 @@
               <div class="tab-pane" id="departments-tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    <h3>Neurology</h3>
+                    <p class="fst-italic">Neurologi adalah cabang kedokteran yang mempelajari gangguan pada sistem saraf, termasuk otak, sumsum tulang belakang, dan saraf perifer.
+                      Penyakit umum yang ditangani:
+                      
+                      Stroke
+                      Epilepsi
+                      Penyakit Alzheimer dan Parkinson
+                      Migrain</p>
+                    <p>Perawatan yang sering digunakan:
+
+                      MRI dan CT Scan untuk diagnostik
+                      Obat antiepilepsi atau antidepresan
+                      Terapi fisik untuk rehabilitasi neurologis
+                      Peran Neurologi:
+                      Sistem saraf adalah pusat kontrol tubuh, sehingga gangguan apa pun pada sistem ini dapat memengaruhi berbagai fungsi tubuh.
+                      </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
@@ -463,9 +485,21 @@
               <div class="tab-pane" id="departments-tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi testing minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                    <h3>Hepatology</h3>
+                    <p class="fst-italic">Hepatologi adalah cabang ilmu kedokteran yang khusus mempelajari hati, kandung empedu, saluran empedu, dan pankreas.
+                      Penyakit umum yang ditangani:
+                      
+                      Hepatitis (A, B, C)
+                      Sirosis hati
+                      Penyakit hati berlemak non-alkohol (NAFLD)
+                      Kanker hati</p>
+                    <p>Perawatan yang sering digunakan:
+
+                      Tes fungsi hati
+                      Transplantasi hati
+                      Obat antiviral untuk hepatitis
+                      Pentingnya Hepatologi:
+                      Hati adalah organ penting untuk metabolisme dan detoksifikasi, sehingga menjaga kesehatannya sangat penting untuk kelangsungan hidup.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
@@ -475,9 +509,23 @@
               <div class="tab-pane" id="departments-tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum testing necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                    <h3>Prediatrics</h3>
+                    <p class="fst-italic">Pediatri adalah cabang kedokteran yang memfokuskan pada kesehatan anak-anak dari bayi baru lahir hingga remaja.
+                      Penyakit umum yang ditangani:
+                      
+                      Infeksi pernapasan akut
+                      Gizi buruk
+                      Gangguan tumbuh kembang
+                      Penyakit alergi dan imunologi</p>
+                    <p>Perawatan yang sering digunakan:
+
+                      Vaksinasi
+                      Pemeriksaan tumbuh kembang
+                      Konseling untuk orang tua terkait kesehatan anak
+                      Pediatri dan Masa Depan Anak:
+                      Pediatri sangat penting untuk membangun fondasi kesehatan fisik dan mental anak, yang akan memengaruhi kualitas hidup mereka di masa depan.
+                      
+                      </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
@@ -487,9 +535,21 @@
               <div class="tab-pane" id="departments-tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet testing sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                    <h3>Eyecare</h3>
+                    <p class="fst-italic">Perawatan mata melibatkan cabang oftalmologi yang berfokus pada kesehatan mata dan penglihatan.
+                      Masalah umum yang ditangani:
+                      
+                      Katarak
+                      Glaukoma
+                      Gangguan refraksi (miopia, hipermetropia, astigmatisme)
+                      Infeksi mata seperti konjungtivitis</p>
+                    <p>Perawatan yang sering digunakan:
+
+                      Pemeriksaan mata rutin
+                      Operasi laser atau katarak
+                      Penggunaan kacamata atau lensa kontak
+                      Kenapa Penting?
+                      Mata adalah organ vital untuk kualitas hidup. Perawatan mata membantu mencegah kebutaan dan memastikan penglihatan yang baik sepanjang hidup.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
@@ -509,8 +569,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Doctors</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>News</h2>
+        <p>Seputar berita tentang kesehatan</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -519,71 +579,75 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Medical Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                <div class="pic">
+                    <img src="assets/img/pubertas-dini.jpg" class="img-fluid" alt="">
                 </div>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
+                <div class="member-info">
+                    <h4><a href="https://health.detik.com/detiktv/d-7642619/video-mengenal-pubertas-dini-bikin-tinggi-badan-anak-kurang-maksimal" target="_blank" rel="noopener noreferrer">Pubertas dini</a></h4>
+                    <span>Klik di sini untuk membaca berita kesehatan</span>
+                    <p>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Anesthesiologist</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
+                      Baca artikel detikHealth, "Video: Mengenal Pubertas Dini, Bikin Tinggi Badan Anak Kurang Maksimal"</p>
+                    <div class="social">
+                    </div>
                 </div>
-              </div>
             </div>
-          </div><!-- End Team Member -->
+        </div><!-- End Team Member --> 
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cardiology</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member d-flex align-items-start">
+              <div class="pic">
+                  <img src="assets/img/ginjal.jpg" class="img-fluid" alt="">
               </div>
-            </div>
-          </div><!-- End Team Member -->
+              <div class="member-info">
+                  <h4><a href="https://health.detik.com/berita-detikhealth/d-7642462/cara-sederhana-menjaga-kesehatan-ginjal-jangan-skip-air-putih" target="_blank" rel="noopener noreferrer">Menjaaga kesehatan ginjal</a></h4>
+                  <span>Klik di sini untuk membaca berita kesehatan</span>
+                  <p>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Neurosurgeon</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""> <i class="bi bi-linkedin"></i> </a>
-                </div>
+                    Ginjal adalah organ penting yang memiliki peran vital dalam tubuh manusia, terutama dalam mengatur keseimbangan cairan, elektrolit, dan memproduksi hormon.
+Meskipun ginjal memiliki kemampuan luar biasa untuk menjaga tubuh tetap sehat, pola hidup yang tidak sehat, kurangnya asupan cairan, dan konsumsi makanan yang tidak tepat dapat membahayakan fungsi ginjal.</p>
+                  <div class="social">
+                  </div>
               </div>
+          </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member d-flex align-items-start">
+            <div class="pic">
+                <img src="assets/img/diabetes.jpeg" class="img-fluid" alt="">
             </div>
-          </div><!-- End Team Member -->
+            <div class="member-info">
+                <h4><a href="" target="_blank" rel="noopener noreferrer">Agar terhindar dari Pubertas</a></h4>
+                <span>Klik di sini untuk membaca berita kesehatan</span>
+                <p>
+
+                  Penyakit diabetes atau gula darah tinggi merupakan salah satu penyakit kronis yang cukup banyak diidap oleh masyarakat Indonesia. Masalah kesehatan ini dapat terjadi saat adanya peningkatan kadar gula darah (glukosa) yang melebihi batasan normal.
+Baca artikel detikHealth, "Penyebab Diabetes di Usia Muda, Kelihatan Sepele Tapi Dampaknya Jangka Panjang selengkapnya".</p>
+                <div class="social">
+                </div>
+            </div>
+        </div>
+    </div><!-- End Team Member -->
+
+    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="team-member d-flex align-items-start">
+          <div class="pic">
+              <img src="assets/img/bawang putih.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+              <h4><a href="https://health.detik.com/berita-detikhealth/d-7642281/sederet-khasiat-bawang-putih-untuk-kesehatan-termasuk-bikin-panjang-umur" target="_blank" rel="noopener noreferrer">Manfaat bawang putih</a></h4>
+              <span>Klik di sini untuk membaca berita kesehatan</span>
+              <p>
+
+                Bawang putih biasa dijadikan bumbu dapur oleh masyarakat Indonesia, namun juga biasa dijadikan sebagai pendamping makanan seperti bawang goreng.
+
+Baca artikel detikHealth, "Sederet Khasiat Bawang Putih untuk Kesehatan, Termasuk Bikin Panjang Umur"</p>
+              <div class="social">
+              </div>
+          </div>
+      </div>
+  </div><!-- End Team Member -->
 
         </div>
 
@@ -651,7 +715,7 @@
               <div class="faq-item">
                 <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
                 <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio testing dolore et.</p>
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio  dolore et.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -902,7 +966,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        
       </div><!-- End Section Title -->
 
       <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
@@ -1014,35 +1078,35 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>testing</h4>
+          <h4></h4>
           <ul>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>testing</h4>
+          <h4></h4>
           <ul>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Nobis illum</h4>
           <ul>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
-            <li><a href="#">testing</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
           </ul>
         </div>
 
